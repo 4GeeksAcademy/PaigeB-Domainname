@@ -1,11 +1,18 @@
 /* eslint-disable */
-import "bootstrap";
-import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+//write your code here
+domain = () => {
+  let first = ["the", "her", "him", "prime", "beauty", "dance"];
+  let second = ["great", "big", "saucy", "blue", "happy", "domain"];
+  let third = [".com", ".org", ".net", ".edu", ".io", ".info"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  for (let i = 0; i < first.length; i++) {
+    for (let a = 0; a < second.length; a++) {
+      for (let b = 0; b < third.length; b++) {
+        console.log(first[i] + second[a] + third[b]);
+      }
+    }
+  }
 };
+
+console.log(domain());
